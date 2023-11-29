@@ -5,6 +5,10 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
+import CurvyLines from '../../images/productCurvyLines.png';
+import KeyboardHideOutlinedIcon from '@mui/icons-material/KeyboardHideOutlined';
+import AutorenewOutlinedIcon from '@mui/icons-material/AutorenewOutlined';
+import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
 
 const item = {
   display: 'flex',
@@ -18,11 +22,6 @@ const number = {
   fontFamily: 'default',
   color: 'secondary.main',
   fontWeight: 'medium',
-};
-
-const image = {
-  height: 55,
-  my: 4,
 };
 
 function ProductHowItWorks() {
@@ -43,7 +42,7 @@ function ProductHowItWorks() {
       >
         <Box
           component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={CurvyLines }
           alt="curvy lines"
           sx={{
             pointerEvents: 'none',
@@ -61,13 +60,15 @@ function ProductHowItWorks() {
               <Box sx={item}>
                 <Box sx={number}>1.</Box>
                 <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
-                  alt="suitcase"
-                  sx={image}
-                />
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  height="160px"
+                >
+                  <KeyboardHideOutlinedIcon sx={{ fontSize: '5em' }}/>
+                </Box>
                 <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
+                  Enter your myanimelist username.
                 </Typography>
               </Box>
             </Grid>
@@ -75,14 +76,15 @@ function ProductHowItWorks() {
               <Box sx={item}>
                 <Box sx={number}>2.</Box>
                 <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
-                  alt="graph"
-                  sx={image}
-                />
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  height="160px"
+                >
+                  <AutorenewOutlinedIcon sx={{ fontSize: '5em' }}/>
+                </Box>
                 <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so
-                  be quick.
+                  Start the search and wait for the system to come up with recommendations.
                 </Typography>
               </Box>
             </Grid>
@@ -90,14 +92,15 @@ function ProductHowItWorks() {
               <Box sx={item}>
                 <Box sx={number}>3.</Box>
                 <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
-                  alt="clock"
-                  sx={image}
-                />
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  height="160px"
+                >
+                  <AssignmentOutlinedIcon sx={{ fontSize: '5em' }}/>
+                </Box>
                 <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+                  {'Receive a list of fresh animes to enjoy :)'}
                 </Typography>
               </Box>
             </Grid>

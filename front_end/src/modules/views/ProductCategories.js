@@ -55,57 +55,42 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    url: 'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400',
-    title: 'Snorkeling',
-    width: '40%',
+    url: 'https://i.ytimg.com/vi/8rA0N3PPHCw/maxresdefault.jpg',
+    title: "*",
+    width: '29%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400',
-    title: 'Massage',
-    width: '20%',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/MyAnimeList_Logo.png',
+    title: "MAL",
+    width: '35%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400',
-    title: 'Hiking',
-    width: '40%',
+    url: 'https://www.watchesxlab.com/cdn/shop/collections/Artboard_1_copy_5_1200x1200.jpg?v=1598712136',
+    title: "jikan",
+    width: '36%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400',
-    title: 'Tour',
+    url: 'https://booklet.ai/img/docs/integrations/sagemaker_logo.svg',
+    title: "sagemaker",
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400',
-    title: 'Gastronomy',
+    url: 'https://redlevelgroup.com/wp-content/uploads/2018/11/AWS-Red-Level-Partner.png',
+    title: "aws",
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400',
-    title: 'Shopping',
+    url: 'https://cdn.oneesports.gg/cdn-data/2023/09/Anime_OnePiece_MonkeyDLuffy_Wallpaper_Smiling_HD.jpg',
+    title: "*",
     width: '24%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400',
-    title: 'Walking',
-    width: '40%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400',
-    title: 'Fitness',
-    width: '20%',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400',
-    title: 'Reading',
-    width: '40%',
-  },
+  }
 ];
 
 export default function ProductCategories() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
+        Tools to Credit
       </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (

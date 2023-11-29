@@ -4,12 +4,6 @@ import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 
-const rightLink = {
-  fontSize: 16,
-  color: 'common.white',
-  ml: 3,
-};
-
 function AppAppBar() {
   return (
     <div>
@@ -23,7 +17,7 @@ function AppAppBar() {
             href="/premium-themes/onepirate/"
             sx={{ fontSize: 24 }}
           >
-            {'AnimeAlchemy'}
+            {'animmender'}
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }} />
         </Toolbar>
