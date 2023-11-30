@@ -7,15 +7,15 @@ import AppAppBar from './../views/AppAppBar';
 import withRoot from './../withRoot';
 
 function Home() {
-  return (
-    <React.Fragment>
-      <AppAppBar />
-      <ProductHero />
-      <ProductHowItWorks />
-      <ProductCategories />
-      <AppFooter />
-    </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <AppAppBar />
+            <ProductHero />
+            <ProductHowItWorks />
+            <ProductCategories />
+            <AppFooter />
+        </React.Fragment>
+    );
 }
 
 export default withRoot(Home);
