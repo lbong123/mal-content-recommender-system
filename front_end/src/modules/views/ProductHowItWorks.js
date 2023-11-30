@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -124,16 +124,20 @@ function ProductHowItWorks() {
                         </Grid>
                     </Grid>
                 </div>
-                <Button
-                    color="secondary"
-                    size="large"
-                    variant="contained"
-                    component="a"
-                    href="/premium-themes/onepirate/sign-up/"
-                    sx={{ mt: 8 }}
+                <Link
+                    to="/recommeder"
+                    style={{ color: 'white', textDecoration: 'none' }}
                 >
-                    Get started
-                </Button>
+                    <Button
+                        color="secondary"
+                        size="large"
+                        variant="contained"
+                        component="a"
+                        sx={{ mt: 8 }}
+                    >
+                        Get started
+                    </Button>
+                </Link>
             </Container>
         </Box>
     );

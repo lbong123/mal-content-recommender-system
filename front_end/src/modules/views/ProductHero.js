@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
+import { Link } from 'react-router-dom';
 
 const backgroundImage = 'https://images3.alphacoders.com/132/1322308.jpeg';
 
@@ -37,16 +38,21 @@ export default function ProductHero() {
                 Start receiving fresh personal anime recommendations based on
                 your own profiles
             </Typography>
-            <Button
-                color="secondary"
-                variant="contained"
-                size="large"
-                component="a"
-                href="/premium-themes/onepirate/sign-up/"
-                sx={{ minWidth: 200 }}
+            <Link
+                to="/recommeder"
+                style={{ color: 'white', textDecoration: 'none' }}
             >
-                Get Recommendations
-            </Button>
+                <Button
+                    color="secondary"
+                    variant="contained"
+                    size="large"
+                    component="a"
+                    href="/premium-themes/onepirate/sign-up/"
+                    sx={{ minWidth: 200 }}
+                >
+                    Get Recommendations
+                </Button>
+            </Link>
             <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
                 Discover the experience
             </Typography>

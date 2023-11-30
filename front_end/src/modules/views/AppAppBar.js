@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import { Link as RouterLink } from 'react-router-dom';
 import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
@@ -10,15 +11,19 @@ function AppAppBar() {
             <AppBar position="fixed">
                 <Toolbar sx={{ justifyContent: 'space-between' }}>
                     <Box sx={{ flex: 1 }} />
-                    <Link
-                        variant="h6"
-                        underline="none"
-                        color="inherit"
-                        href="/premium-themes/onepirate/"
-                        sx={{ fontSize: 24 }}
+                    <RouterLink
+                        to="/"
+                        style={{ color: 'white', textDecoration: 'none' }}
                     >
-                        {'animmender'}
-                    </Link>
+                        <Link
+                            variant="h6"
+                            underline="none"
+                            color="inherit"
+                            sx={{ fontSize: 24 }}
+                        >
+                            {'animmender'}
+                        </Link>
+                    </RouterLink>
                     <Box
                         sx={{
                             flex: 1,
