@@ -39,7 +39,7 @@ export default function ProductHero() {
                 your own profiles
             </Typography>
             <Link
-                to="/recommeder"
+                to="/recommender"
                 style={{ color: 'white', textDecoration: 'none' }}
             >
                 <Button

@@ -4,7 +4,6 @@ import AppFooter from './../views/AppFooter';
 import ProductHero from './../views/ProductHero';
 import ProductHowItWorks from './../views/ProductHowItWorks';
 import AppAppBar from './../views/AppAppBar';
-import withRoot from './../withRoot';
 
 function Home() {
     return (
@@ -18,4 +17,4 @@ function Home() {
     );
 }
 
-export default withRoot(Home);
+export default Home;

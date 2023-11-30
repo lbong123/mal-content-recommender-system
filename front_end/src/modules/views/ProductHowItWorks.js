@@ -125,7 +125,7 @@ function ProductHowItWorks() {
                     </Grid>
                 </div>
                 <Link
-                    to="/recommeder"
+                    to="/recommender"
                     style={{ color: 'white', textDecoration: 'none' }}
                 >
                     <Button
