@@ -2,7 +2,6 @@ import React from 'react';
 import AppAppBar from '../views/AppAppBar';
 import ProductCardGroup from '../views/ProductCardGroup';
 
-
 function Recommender() {
     return (
         <React.Fragment>

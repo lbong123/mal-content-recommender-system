@@ -9,6 +9,7 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import TextField from '@mui/material/TextField';
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -49,8 +50,12 @@ function ProductCardGroup() {
                         spacing={2}
                         justifyContent="center"
                     >
-                        <Button variant="contained">Main call to action</Button>
-                        <Button variant="outlined">Secondary action</Button>
+                        <TextField
+                            id="outlined-search"
+                            label="MAL Username"
+                            type="search"
+                        />
+                        <Button variant="contained">Start Search</Button>
                     </Stack>
                 </Container>
             </Box>
