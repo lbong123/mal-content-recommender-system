@@ -14,7 +14,7 @@ def main():
     with open("userList.txt", 'a') as userList:
         pageNum = 75
         while pageNum < NUM_USERS:
-            URL = f"https://myanimelist.net/anime/34572/Black_Clover/stats?m=all&show={pageNum}#members"
+            URL = f"https://myanimelist.net/anime/18897/Nisekoi/stats?m=all&show={pageNum}#members"
             page = requests.get(URL)
 
             if (page.status_code == 429):
@@ -26,9 +26,10 @@ def main():
             for job_element in job_elements:
                 text = job_element.text
                 userList.write(f"{text}\n")
+                print("wrote")
 
             pageNum += 75
-            time.sleep(2)
+            time.sleep(4)
 
 if __name__ == "__main__":
     main()
