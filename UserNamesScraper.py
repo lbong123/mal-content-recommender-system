@@ -1,6 +1,5 @@
-
 """
-This script will be dedicated to scraping members from the Attack on Titan member list using beautiful soup.
+This script will be dedicated to scraping members from various anime user lists using beautiful soup.
 The scraped output will be saved into a CSV file called userList.txt.
 
 """
