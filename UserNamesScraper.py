@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 NUM_USERS = 60000
 
 def main():
-    with open("userList.txt", 'a') as userList:
+    with open("userList.txt", 'a', encoding="utf-8") as userList:
         pageNum = 75
         while pageNum < NUM_USERS:
             URL = f"https://myanimelist.net/anime/18897/Nisekoi/stats?m=all&show={pageNum}#members"

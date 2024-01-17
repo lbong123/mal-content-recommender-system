@@ -20,7 +20,7 @@ def main():
     URL = f"https://myanimelist.net/animelist/lbong123?status=2"
     driver.get(URL)
 
-    time.sleep(10)
+    time.sleep(5)
 
     soup = BeautifulSoup(driver.page_source, "html.parser")
 
