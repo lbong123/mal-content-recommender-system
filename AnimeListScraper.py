@@ -7,6 +7,7 @@ def main():
     with open("animeList.csv", 'w', newline='', encoding="utf-8") as file:
         pageNum = 0
         titles = []
+        urls = []
         prev = None
         curr = 0
 
@@ -23,8 +24,11 @@ def main():
                 animeList = soup.find_all("tr", class_="ranking-list")
                 
                 for anime in animeList:
-                    title = anime.find("h3", class_="fl-l fs14 fw-b anime_ranking_h3").find("a").text
+                    element = anime.find("h3", class_="fl-l fs14 fw-b anime_ranking_h3")
+                    title = element.text
+                    url = element.find("a").get("href")
                     titles.append(title)
+                    urls.append(url)
 
                 print(len(titles))
                 prev = curr
@@ -35,9 +39,11 @@ def main():
             
             writer = csv.writer(file)
             writer.writerow(titles)
+            writer.writerow(urls)
         except:
             writer = csv.writer(file)
             writer.writerow(titles)
+            writer.writerow(urls)
 
         
 if __name__ == "__main__":

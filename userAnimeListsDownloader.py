@@ -20,11 +20,11 @@ def main():
         reader = csv.reader(animeList)
         animes = list(reader)[0]
 
-    try:
-        with open("uniqueUserList.txt", 'r', encoding="utf-8") as userList:
-            with open("animeScores.csv", 'a', encoding="utf-8") as animeScores:
-                writer = csv.writer(animeScores)
-                for user in userList.readlines():
+    with open("uniqueUserList.txt", 'r', encoding="utf-8") as userList:
+        with open("animeScores.csv", 'a', newline='', encoding="utf-8") as animeScores:
+            writer = csv.writer(animeScores)
+            for user in userList.readlines():
+                try:
                     user = user.strip("\n")
 
                     response = requests.get(f'https://api.myanimelist.net/v0/users/{user}/animelist?limit=1000&fields=list_status', headers=headers)
@@ -40,13 +40,14 @@ def main():
                     for i, anime in enumerate(animes):
                         scoreList[i] = scores.get(anime, 0)
                     
-                    print(user)
+                    print(len(scoreList))
                     writer.writerow(scoreList)
-
-    except:
-        print("failed")
-        print(user)
+                    print(user)
+                except Exception as e:
+                    print(e)
+                    print(user)
     
+
 
 
 
