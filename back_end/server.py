@@ -11,7 +11,7 @@ def get_recommendations():
 if __name__ == "__main__":
     # Replace 'your_access_key' and 'your_secret_key' with your AWS access key and secret key
     """
-    s3 = boto3.client('s3', aws_access_key_id='AKIA5FTY6Z3OPDXFBDM7', aws_secret_access_key='XdYO6VJDXqjSAAKlYcpCm6NAnuHfSRhg1Sw4fTeg')
+    s3 = boto3.client('s3', aws_access_key_id='', aws_secret_access_key='')
 
     bucket_name = 'animerecommenderdata'
     remote_file_key = 'recommender.pkl'
